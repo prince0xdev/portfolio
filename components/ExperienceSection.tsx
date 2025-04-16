@@ -10,7 +10,7 @@ import {
 import Image from 'next/image';
 
 function ExperienceSection() {
-    const [isOpen, setIsOpen] = React.useState(false)
+    
   return (
     <section className="flex flex-col gap-2 justify-center">
         <BlurFade  delay={0.25} inView>
