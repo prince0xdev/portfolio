@@ -105,7 +105,7 @@ export const DATA = {
       badges: ["Open Source", "Security"],
       location: "Boulder, CO",
       title: "Open-Source Contributor",
-      logoUrl: "/logos/pearai.jpeg",
+      logoUrl: "/ekpinse.webp",
       start: "June 2024",
       end: "Present",
       description:
@@ -121,7 +121,7 @@ export const DATA = {
     {
       company: "Netskope",
       badges: ["Security", "SOC"],
-      href: "https://netskope.com",
+      href: "/ekpinse.webp",
       location: "Clayton, MO",
       title: "Information Security Intern",
       logoUrl: "/logos/netskope.png",
