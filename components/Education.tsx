@@ -11,13 +11,13 @@ import {
 import * as motion from "motion/react-client"
 import Image from 'next/image';
 
-function ExperienceSection() {
-    const data = DATA.work;
+function EducationSection() {
+    const data = DATA.schoolpath;
     console.log(data)
   return (
     <section className="flex flex-col gap-2 justify-center">
         <BlurFade  delay={0.25} inView>
-            <h1 className='text-xl pb-4'>Work Experience</h1>
+            <h1 className='text-xl pb-4'>Education</h1>
         </BlurFade>
       <Separator className='h-2 mb-4'/>
       <div className='border shadow-2xl  rounded-sm w-full p-4 text-md text-justify text-muted-foreground dark:border dark:border-amber-400 tracking-tight font-light'>
@@ -29,8 +29,8 @@ function ExperienceSection() {
                       <div className='flex items-center gap-2'>
                           <div className='rounded-full'><Image className='rounded-full' src={jobs.logoUrl} width={50} height={0} alt={jobs.company}/></div>
                           <div>
-                              <h3 className='dark:text-gray-200 text-neutral-900  tracking-tight'>{jobs.company}</h3>
-                              <h4 className='text-sm text-muted-foreground tracking-tighter'>{jobs.title}</h4>
+                              <h3 className='dark:text-gray-200 text-neutral-900  tracking-tight'>{jobs.title}</h3>
+                              <h4 className='text-sm text-muted-foreground tracking-tighter'>{jobs.company}</h4>
                           </div>
                       </div>
                       <div className='hidden md:block'>
@@ -57,4 +57,4 @@ function ExperienceSection() {
   )
 }
 
-export default ExperienceSection
+export default EducationSection

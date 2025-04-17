@@ -9,6 +9,7 @@ import {
 } from "@/components/ui/tooltip"
 import Footer from "@/components/layout/Footer";
 import { ScrollProgress } from "@/components/magicui/scroll-progress";
+import { Analytics } from '@vercel/analytics/next';
 
 const outfit = Outfit({
   variable: "--font-outfit",
@@ -48,6 +49,7 @@ export default function RootLayout({
             <Footer/>
           </TooltipProvider>
         </ThemeProvider>
+        <Analytics />
         <script defer src="https://cloud.umami.is/script.js" data-website-id="e777f946-1d10-41ab-90ba-f3cf0c120971"></script>
       </body>
     </html>

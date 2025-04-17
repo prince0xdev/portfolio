@@ -141,7 +141,7 @@ function SkillsSection() {
       </BlurFade>
       <Separator className='h-2 mb-4'/>
       <div className="relative flex w-full flex-col items-center justify-center overflow-hidden shadow-2xl shadow-neutral-400 border-amber-300 dark:border rounded-md">
-        <Marquee repeat={10} pauseOnHover className="[--duration:100s]">
+        <Marquee repeat={10} pauseOnHover className="[--duration:200s]">
           {firstRow.map((skills) => (
             <ReviewCard key={skills.title} {...skills} />
           ))}
@@ -151,8 +151,8 @@ function SkillsSection() {
             <ReviewCard key={skills.title} {...skills} />
           ))}
         </Marquee>
-        <div className="pointer-events-none absolute inset-y-0 left-0 w-1/4 bg-gradient-to-r from-background"></div>
-        <div className="pointer-events-none absolute inset-y-0 right-0 w-1/4 bg-gradient-to-l from-background"></div>
+        <div className="pointer-events-none absolute inset-y-0 left-0 w-[10px] bg-gradient-to-r from-background"></div>
+        <div className="pointer-events-none absolute inset-y-0 right-0 w-[10px] bg-gradient-to-l from-background"></div>
       </div>
     </section>
   )

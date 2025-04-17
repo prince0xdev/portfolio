@@ -45,19 +45,19 @@ export const DATA = {
     social: {
       GitHub: {
         name: "GitHub",
-        url: "https://github.com/cqdev-co",
+        url: "https://github.com/prince-dev41",
         icon: HomeIcon,
         navbar: true,
       },
       LinkedIn: {
         name: "LinkedIn",
-        url: "https://linkedin.com/in/conorgquinlan",
+        url: "https://www.linkedin.com/in/prince-ekpinse-developpement-front-end/",
         icon: HomeIcon,
         navbar: true,
       },
       X: {
         name: "X",
-        url: "https://x.com/realconorcodes",
+        url: "https://x.com/EkpinsePrince",
         icon: HomeIcon,
         navbar: true,
       },
@@ -76,7 +76,8 @@ export const DATA = {
       area: "DevSecOps",
       skills: ["CI/CD pipeline security", "Secret management", "Automated security testing", "Compliance as code", "Security monitoring"]
     },
-  ],work: [
+  ],
+  work: [
     {
       company: "RAB TECH",
       href: "https://cyera.io",
@@ -141,6 +142,80 @@ export const DATA = {
       start: "October 2023",
       end: "October 2026",
     },
+  ],
+  schoolpath: [
+    {
+      company: "HECM Calavi",
+      href: "https://hecm.bj",
+      badges: ["Licence 2", "Informatique", "Logiciels"],
+      location: "Calavi, Bénin",
+      title: "Licence 2 - Systèmes Informatiques et Logiciels",
+      logoUrl: "/logo-hecm.webp",
+      start: "Octobre 2023",
+      end: "Présent",
+      description:
+        "Parcours universitaire axé sur le développement logiciel, les réseaux et la sécurité. Cette formation m’a permis d’explorer des domaines comme le front-end, les SaaS, et la cybersécurité.",
+      highlights: [
+        "Projets personnels en React.js, Next.js et TailwindCSS (ex: LinkVibe, Parcours)",
+        "Initiation à la cybersécurité avec Google Cloud Shell et Kali Linux",
+        "Développement de solutions SaaS orientées productivité, freelancing et éducation",
+        "Création de contenu tech sur LinkedIn avec +3000 abonnés"
+      ]
+    },
+    {
+      company: "Collège d'Enseignement Géneral/Paouignan",
+      href: "#",
+      badges: ["BAC", "Série D"],
+      location: "Cotonou, Bénin",
+      title: "Baccalauréat Scientifique - Série D",
+      logoUrl: "/ekpinse.webp",
+      start: "Septembre 2020",
+      end: "Juin 2023",
+      description:
+        "Formation rigoureuse en mathématiques, physique et SVT. C’est pendant cette période que j’ai découvert ma passion pour l'informatique et commencé à coder.",
+      highlights: [
+        "Obtention du BAC avec mention",
+        "Lancement d’un site de révisions pour aider mes camarades",
+        "Découverte du développement web et des bases en algorithmique",
+        "Organisation d'ateliers tech et responsable du club de sciences"
+      ]
+    },
+    {
+      company: "Collège d'Enseignement Géneral/Paouignan",
+      href: "#",
+      badges: ["BEPC", "Générale"],
+      location: "Abomey-Calavi, Bénin",
+      title: "Brevet d'Études du Premier Cycle (BEPC)",
+      logoUrl: "/ekpinse.webp",
+      start: "Septembre 2016",
+      end: "Juin 2020",
+      description:
+        "Cycle secondaire marqué par une orientation vers les sciences exactes et la logique mathématique. C’est aussi là que j’ai été initié à l’informatique scolaire.",
+      highlights: [
+        "Obtention du BEPC avec mention Assez Bien",
+        "Participation aux olympiades régionales de mathématiques",
+        "Premiers contacts avec les outils numériques et les clubs tech",
+        "Développement d’un fort esprit d’analyse et de collaboration"
+      ]
+    },
+    {
+      company: "École Primaire Publique Domè Paouignan A",
+      href: "#",
+      badges: ["CEP", "Fondamentale"],
+      location: "Tankpè, Abomey-Calavi, Bénin",
+      title: "Certificat d'Études Primaires (CEP)",
+      logoUrl: "/ekpinse.webp",
+      start: "Septembre 2011",
+      end: "Juin 2016",
+      description:
+        "Études primaires à Paouigna où j’ai acquis les compétences de base en français, mathématiques et culture générale, tout en développant ma discipline personnelle.",
+      highlights: [
+        "Obtention du CEP avec mention Bien",
+        "Participation aux concours de calcul mental et dictée",
+        "Bon niveau en expression écrite et orale",
+        "Développement de l’esprit de rigueur et de curiosité"
+      ]
+    }
   ],
   projects: [
     {
