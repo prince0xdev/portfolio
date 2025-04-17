@@ -8,6 +8,7 @@ import {
   TooltipProvider
 } from "@/components/ui/tooltip"
 import Footer from "@/components/layout/Footer";
+import { ScrollProgress } from "@/components/magicui/scroll-progress";
 
 const outfit = Outfit({
   variable: "--font-outfit",
@@ -38,7 +39,8 @@ export default function RootLayout({
           size={0.6}
           staticity={30}
           refresh={true}
-        /> 
+        />
+        <ScrollProgress className="h-1" />
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <TooltipProvider>
             <Header/>
