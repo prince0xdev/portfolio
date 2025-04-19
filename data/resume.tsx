@@ -1,3 +1,4 @@
+import { GitHubLogoIcon } from "@radix-ui/react-icons";
 import { Globe2Icon, HomeIcon, NotebookIcon } from "lucide-react";
 
 export const DATA = {
@@ -233,7 +234,7 @@ export const DATA = {
         "Shadcn UI",
         "Magic UI",
       ],
-      links: [
+      links: [  
         {
           type: "Website",
           href: "https://conorq.com",
@@ -242,10 +243,40 @@ export const DATA = {
         {
           type: "Source",
           href: "https://github.com/cqdev-co/portfolio",
-          icon: HomeIcon,
+          icon: <GitHubLogoIcon className=""/>,
         },
       ],
-      image: "",
+      image: "/introducing.webp",
+      video: "https://cdn.magicui.design/bento-grid.mp4",
+    },
+    {
+      title: "Portfolio",
+      href: "https://www.conorq.com",
+      dates: "March 2025 - Present",
+      active: false,
+      description:
+        "Developed a portfolio website to demonstrate my skills and system design capabilities.",
+      technologies: [
+        "NextJS",
+        "TypeScript",
+        "ShadCN",
+        "TailwindCSS",
+        "Shadcn UI",
+        "Magic UI",
+      ],
+      links: [  
+        {
+          type: "Website",
+          href: "https://conorq.com",
+          icon: <Globe2Icon className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/cqdev-co/portfolio",
+          icon: <GitHubLogoIcon className=""/>,
+        },
+      ],
+      image: "/introducing.webp",
       video: "https://cdn.magicui.design/bento-grid.mp4",
     },
   ],
