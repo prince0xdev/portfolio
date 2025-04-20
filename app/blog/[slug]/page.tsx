@@ -13,9 +13,10 @@ export async function generateStaticParams() {
   const posts = getBlogPosts()
 
   return posts.map((post) => ({
-    slug: post.slug,
+    params: { slug: post.slug },
   }))
 }
+
 
 export function generateMetadata({ params }: Params) {
   const post = getBlogPosts().find((post) => post.slug === params.slug)
