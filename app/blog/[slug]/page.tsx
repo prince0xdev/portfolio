@@ -1,51 +1,106 @@
-import { getAllPostIds, getPostData } from '@/lib/blog';
-import { format } from 'date-fns';
-import { fr } from 'date-fns/locale';
-import Link from 'next/link';
+import { notFound } from 'next/navigation'
+import { CustomMDX } from '@/components/mdx'
+import { formatDate, getBlogPosts } from '@/app/blog/utils'
+import { baseUrl } from '@/app/sitemap'
 
-// Génération des chemins statiques pour tous les articles
-export async function generateStaticParams() {
-  const paths = getAllPostIds();
-  return paths;
-}export default async function Post({ params }: { params: { slug: string } }) {
-  // Attendez que params soit disponible
-  const slug = await params.slug;
-  
-  try {
-    const postData = await getPostData(slug);
-    
-    return (
-      <div className="max-w-3xl mx-auto px-4 py-8">
-        <article className="prose lg:prose-xl mx-auto">
-          <Link href="/" className="text-blue-600 hover:underline mb-8 inline-block">
-            &larr; Retour à accueil
-          </Link>
-          
-          <h1 className="text-3xl font-bold mb-2">{postData.title}</h1>
-          
-          <div className="flex items-center justify-between mb-8">
-            <p className="text-gray-500">
-              {format(new Date(postData.date), 'dd MMMM yyyy', { locale: fr })}
-            </p>
-            <div className="flex flex-wrap gap-2">
-              {postData.tags.map((tag: string) => (
-                <span 
-                  key={tag} 
-                  className="bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded"
-                >
-                  {tag}
-                </span>
-              ))}
-            </div>
-          </div>
-          
-          <div className="border-t pt-8" dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
-        </article>
-      </div>
-    );
-  } catch (error){
-    return (
-      console.log(error)
-    )
+type Params = {
+  params: {
+    slug: string
   }
 }
+
+export async function generateStaticParams() {
+  const posts = getBlogPosts()
+
+  return posts.map((post) => ({
+    slug: post.slug,
+  }))
+}
+
+export function generateMetadata({ params }: Params) {
+  const post = getBlogPosts().find((post) => post.slug === params.slug)
+
+  if (!post) return
+
+  const {
+    title,
+    publishedAt: publishedTime,
+    summary: description,
+    image,
+  } = post.metadata
+
+  const ogImage = image
+    ? image
+    : `${baseUrl}/og?title=${encodeURIComponent(title)}`
+
+  return {
+    title,
+    description,
+    openGraph: {
+      title,
+      description,
+      type: 'article',
+      publishedTime,
+      url: `${baseUrl}/blog/${post.slug}`,
+      images: [
+        {
+          url: ogImage,
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description,
+      images: [ogImage],
+    },
+  }
+}
+
+const BlogPage = ({ params }: Params) => {
+  const post = getBlogPosts().find((post) => post.slug === params.slug)
+
+  if (!post) {
+    notFound()
+  }
+
+  return (
+    <section>
+      <script
+        type="application/ld+json"
+        suppressHydrationWarning
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BlogPosting',
+            headline: post.metadata.title,
+            datePublished: post.metadata.publishedAt,
+            dateModified: post.metadata.publishedAt,
+            description: post.metadata.summary,
+            image: post.metadata.image
+              ? `${baseUrl}${post.metadata.image}`
+              : `/og?title=${encodeURIComponent(post.metadata.title)}`,
+            url: `${baseUrl}/blog/${post.slug}`,
+            author: {
+              '@type': 'Person',
+              name: 'My Portfolio',
+            },
+          }),
+        }}
+      />
+      <h1 className="title font-semibold text-2xl tracking-tighter">
+        {post.metadata.title}
+      </h1>
+      <div className="flex justify-between items-center mt-2 mb-8 text-sm">
+        <p className="text-sm text-neutral-600 dark:text-neutral-400">
+          {formatDate(post.metadata.publishedAt)}
+        </p>
+      </div>
+      <article className="prose">
+        <CustomMDX source={post.content} />
+      </article>
+    </section>
+  )
+}
+
+export default BlogPage
