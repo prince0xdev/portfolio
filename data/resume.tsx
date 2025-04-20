@@ -1,6 +1,6 @@
 import { GitHubLogoIcon } from "@radix-ui/react-icons";
 import { Globe2Icon, HomeIcon, NotebookIcon } from "lucide-react";
-
+import { Icons } from "@/components/icons";
 export const DATA = {
   name: "Prince Ekpinse",
   age: 19,
@@ -47,19 +47,19 @@ export const DATA = {
       GitHub: {
         name: "GitHub",
         url: "https://github.com/prince-dev41",
-        icon: HomeIcon,
+        icon: Icons.github,
         navbar: true,
       },
       LinkedIn: {
         name: "LinkedIn",
         url: "https://www.linkedin.com/in/prince-ekpinse-developpement-front-end/",
-        icon: HomeIcon,
+        icon: Icons.linkedin,
         navbar: true,
       },
       X: {
         name: "X",
         url: "https://x.com/EkpinsePrince",
-        icon: HomeIcon,
+        icon: Icons.x,
         navbar: true,
       },
     },
