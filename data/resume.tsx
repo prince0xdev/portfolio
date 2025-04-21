@@ -81,11 +81,11 @@ export const DATA = {
   work: [
     {
       company: "RAB TECH",
-      href: "https://rab-tech.com/o",
+      href: "https://rab-tech.com/",
       badges: ["Flutter", "Mobile"],
       location: "Cotonou, Atlantique, Bénin",
       title: "Flutter Developer Intern",
-      logoUrl: "/logo-rab-tech.png",
+      logoUrl: "/rab-tech.jpeg",
       start: "July 2024",
       end: "August 2024",
       description:
@@ -137,7 +137,7 @@ export const DATA = {
   education: [
     {
       school: "HECM University",
-      href: "https://du.edu",
+      href: "https://hecm-afrique.net/",
       degree: "B.S. in Software and Computer Science;",
       logoUrl: "/logos/du.svg",
       start: "October 2023",
@@ -147,7 +147,7 @@ export const DATA = {
   schoolpath: [
     {
       company: "HECM Calavi",
-      href: "https://hecm.bj",
+      href: "https://hecm-afrique.net/",
       badges: ["Licence 2", "Informatique", "Logiciels"],
       location: "Calavi, Bénin",
       title: "Licence 2 - Systèmes Informatiques et Logiciels",
