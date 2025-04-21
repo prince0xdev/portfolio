@@ -81,11 +81,11 @@ export const DATA = {
   work: [
     {
       company: "RAB TECH",
-      href: "https://cyera.io",
+      href: "https://rab-tech.com/o",
       badges: ["Flutter", "Mobile"],
       location: "Cotonou, Atlantique, Bénin",
       title: "Flutter Developer Intern",
-      logoUrl: "/ekpinse.webp",
+      logoUrl: "/logo-rab-tech.png",
       start: "July 2024",
       end: "August 2024",
       description:
@@ -209,7 +209,7 @@ export const DATA = {
       start: "Septembre 2011",
       end: "Juin 2016",
       description:
-        "Études primaires à Paouigna où j’ai acquis les compétences de base en français, mathématiques et culture générale, tout en développant ma discipline personnelle.",
+        "Études primaires à Paouignan où j’ai acquis les compétences de base en français, mathématiques et culture générale, tout en développant ma discipline personnelle.",
       highlights: [
         "Obtention du CEP avec mention Bien",
         "Participation aux concours de calcul mental et dictée",
@@ -221,8 +221,8 @@ export const DATA = {
   projects: [
     {
       title: "Portfolio",
-      href: "https://www.conorq.com",
-      dates: "March 2025 - Present",
+      href: "https://ekpinse-prince.vercel.app/blog",
+      dates: "April 2025 - Present",
       active: true,
       description:
         "Developed a portfolio website to demonstrate my skills and system design capabilities.",
@@ -231,53 +231,74 @@ export const DATA = {
         "TypeScript",
         "ShadCN",
         "TailwindCSS",
-        "Shadcn UI",
         "Magic UI",
       ],
       links: [  
         {
           type: "Website",
-          href: "https://conorq.com",
+          href: "https://ekpinse-prince.vercel.app/blog",
           icon: <Globe2Icon className="size-3" />,
         },
         {
           type: "Source",
-          href: "https://github.com/cqdev-co/portfolio",
+          href: "https://github.com/prince-dev41/portfolio",
           icon: <GitHubLogoIcon className=""/>,
         },
       ],
-      image: "/introducing.webp",
-      video: "https://cdn.magicui.design/bento-grid.mp4",
+      image: "/portfolio.png",
     },
     {
-      title: "Portfolio",
-      href: "https://www.conorq.com",
-      dates: "March 2025 - Present",
-      active: false,
+      title: "YouTube Thumbnail Generator",
+      href: "https://yt-thumbnail-generator.netlify.app/",
+      dates: "January 2025 - Present",
+      active: true,
       description:
-        "Developed a portfolio website to demonstrate my skills and system design capabilities.",
+        "YouTube Thumbnail Generator is a simple tool that creates a YouTube card from a video URL.",
       technologies: [
         "NextJS",
-        "TypeScript",
-        "ShadCN",
+        "JavaScript",
         "TailwindCSS",
-        "Shadcn UI",
-        "Magic UI",
       ],
       links: [  
         {
           type: "Website",
-          href: "https://conorq.com",
+          href: "https://yt-thumbnail-generator.netlify.app/",
           icon: <Globe2Icon className="size-3" />,
         },
         {
           type: "Source",
-          href: "https://github.com/cqdev-co/portfolio",
+          href: "https://github.com/prince-dev41/youtube-thumbnail-generator",
           icon: <GitHubLogoIcon className=""/>,
         },
       ],
-      image: "/introducing.webp",
-      video: "https://cdn.magicui.design/bento-grid.mp4",
+      image: "/yt-thumbnail.png",
+    },
+    {
+      title: "H-Calendar",
+      href: "https://yt-thumbnail-generator.netlify.app/",
+      dates: "January 2025 - Present",
+      active: true,
+      description:
+        "Gérez vos emplois du temps plus facilement",
+      technologies: [
+        "NextJS",
+        "JavaScript",
+        "DaisyUI",
+        "TailwindCSS",
+      ],
+      links: [  
+        {
+          type: "Website",
+          href: "https://hecm-calendar.netlify.app/login",
+          icon: <Globe2Icon className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/prince-dev41/hecm-calendar",
+          icon: <GitHubLogoIcon className=""/>,
+        },
+      ],
+      image: "/h-calendar.png",
     },
   ],
   certifications: [
