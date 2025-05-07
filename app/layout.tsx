@@ -27,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en"  suppressHydrationWarning>
       <body
-        className={`${outfit.className} antialiased dark:bg-neutral-800 relative bg-gray-100 flex-1 pt-6 pb-28 px-4 sm:px-6 md:px-8 max-w-4xl mx-auto w-full text-sm sm:text-base`}
+        className={`${outfit.className}  antialiased dark:bg-neutral-800 relative bg-gray-100 flex-1 pt-6 pb-28 px-4 sm:px-6 md:px-8 max-w-4xl mx-auto w-full text-sm sm:text-base`}
       >
         {/* Particles background */}
         <Particles 

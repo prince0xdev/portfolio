@@ -20,7 +20,7 @@ function ExperienceSection() {
             <h1 className='text-xl pb-4'>Work Experience</h1>
         </BlurFade>
       <Separator className='h-2 mb-4'/>
-      <div className='border shadow-2xl  rounded-sm w-full p-4 text-md text-justify text-muted-foreground dark:border dark:border-amber-400 tracking-tight font-light'>
+      <div className='border shadow-2xl  rounded-sm w-full p-4 text-md text-justify text-muted-foreground  tracking-tight font-light'>
         {
           data.map((jobs, index)=> <div className='flex flex-col gap-4 mb-4' key={index}>
             <Collapsible>

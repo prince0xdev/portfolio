@@ -140,7 +140,7 @@ function SkillsSection() {
         <h1 className='text-xl pb-4'>Skills</h1>
       </BlurFade>
       <Separator className='h-2 mb-4'/>
-      <div className="relative flex w-full flex-col items-center justify-center overflow-hidden shadow-2xl shadow-neutral-400 border-amber-300 dark:border rounded-md">
+      <div className="relative flex w-full flex-col items-center justify-center overflow-hidden shadow-sm shadow-neutral-400  dark:border rounded-md">
         <Marquee repeat={10} pauseOnHover className="[--duration:200s]">
           {firstRow.map((skills) => (
             <ReviewCard key={skills.title} {...skills} />
