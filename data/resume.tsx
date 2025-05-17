@@ -1,6 +1,6 @@
 import { GitHubLogoIcon } from "@radix-ui/react-icons";
 import { Globe2Icon, HomeIcon, NotebookIcon } from "lucide-react";
-import { Icons } from "@/components/icons";
+import { Icons } from "../components/icons";
 export const DATA = {
   name: "Prince Ekpinse",
   age: 19,
@@ -220,7 +220,8 @@ export const DATA = {
   ],
   projects: [
     {
-      title: "Portfolio",
+      index: 1,
+      title: "My Portfolio",
       href: "https://ekpinse-prince.vercel.app/blog",
       dates: "April 2025 - Present",
       active: true,
@@ -248,6 +249,7 @@ export const DATA = {
       image: "/portfolio.png",
     },
     {
+      index: 2,
       title: "YouTube Thumbnail Generator",
       href: "https://yt-thumbnail-generator.netlify.app/",
       dates: "January 2025 - Present",
@@ -256,8 +258,8 @@ export const DATA = {
         "YouTube Thumbnail Generator is a simple tool that creates a YouTube card from a video URL.",
       technologies: [
         "NextJS",
-        "JavaScript",
         "TailwindCSS",
+        "YouTube API v1"
       ],
       links: [  
         {
@@ -273,7 +275,7 @@ export const DATA = {
       ],
       image: "/yt-thumbnail.png",
     },
-    {
+    { index: 3,
       title: "H-Calendar",
       href: "https://hecm-calendar.netlify.app/",
       dates: "January 2025 - Present",
@@ -282,8 +284,6 @@ export const DATA = {
         "Gérez vos emplois du temps plus facilement",
       technologies: [
         "NextJS",
-        "JavaScript",
-        "DaisyUI",
         "TailwindCSS",
       ],
       links: [  

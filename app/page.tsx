@@ -1,10 +1,10 @@
 import AboutSection from '@/components/About';
 import BlogSection from '@/components/BlogSection';
 import ContactSection from '@/components/ContactSection';
-import EducationSection from '@/components/Education';
+import EducationSection from '@/components/EducationSection';
 import ExperienceSection from '@/components/ExperienceSection';
 import ProjectsSection from '@/components/ProjectsSection';
-import SkillsSection from '@/components/Skills';
+import SkillsSection from '@/components/SkillsSection';
 
 export default function Home() {
   return (

@@ -2,9 +2,9 @@ import React from 'react'
 
 function BlogCard() {
   return (
-    <div>
+    <section className="flex flex-col gap-2 justify-center">
       
-    </div>
+    </section>
   )
 }
 

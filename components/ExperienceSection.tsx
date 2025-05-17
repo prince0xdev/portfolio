@@ -10,6 +10,7 @@ import {
   } from "@/components/ui/collapsible"
 import * as motion from "motion/react-client"
 import Image from 'next/image';
+import { ChevronRight } from 'lucide-react';
 
 function ExperienceSection() {
     const data = DATA.work;
@@ -20,16 +21,19 @@ function ExperienceSection() {
             <h1 className='text-xl pb-4'>Work Experience</h1>
         </BlurFade>
       <Separator className='h-2 mb-4'/>
-      <div className='border shadow-2xl  rounded-sm w-full p-4 text-md text-justify text-muted-foreground  tracking-tight font-light'>
+      <div className='w-full text-md text-justify text-muted-foreground tracking-tight font-light'>
         {
-          data.map((jobs, index)=> <div className='flex flex-col gap-4 mb-4' key={index}>
+          data.map((jobs, index)=> <div className='flex flex-col gap-3 mb-3 shadow-2xl rounded-sm p-2 border border-neutral-300 dark:border-neutral-700' key={index}>
             <Collapsible>
               <CollapsibleTrigger className='cursor-pointer w-full text-left'>
                   <motion.div initial={{ opacity: 0, scale: 0 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.4, scale: { type: "spring", visualDuration: 0.4, bounce: 0.5 },}} className='flex items-center justify-between'>
                       <div className='flex items-center gap-2'>
                           <div className='rounded-full'><Image className='rounded-full' src={jobs.logoUrl} width={50} height={0} alt={jobs.company}/></div>
                           <div>
-                              <h3 className='dark:text-gray-200 text-neutral-900  tracking-tight'>{jobs.company}</h3>
+                              <div className=' flex items-center gap-6'>
+                                <h3 className='dark:text-gray-200 text-neutral-900  tracking-tight'>{jobs.company}</h3>
+                                <ChevronRight className='w-4 text-neutral-500 dark:text-neutral-300'/>
+                              </div>
                               <h4 className='text-sm text-muted-foreground tracking-tighter'>{jobs.title}</h4>
                           </div>
                       </div>
@@ -39,7 +43,7 @@ function ExperienceSection() {
                   </motion.div>
               </CollapsibleTrigger>
               <CollapsibleContent>
-                <div className='text-sm text-muted-foreground tracking-tighter px-6 py-4'>
+                <div className='text-sm text-muted-foreground tracking-tighter py-3'>
                   <p className='mb-3'>{jobs.description}</p>
                   <ul className="flex flex-col gap-2">
                   {jobs.highlights.map((highlight, index)=><div  key={index}>
@@ -48,7 +52,6 @@ function ExperienceSection() {
                   </ul>
                 </div>
               </CollapsibleContent>
-              <Separator className='h-2 mt-2'/>
             </Collapsible>
           </div> )
         }
