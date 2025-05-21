@@ -1,5 +1,5 @@
 import { BlurFade } from '@/components/magicui/blur-fade'
-import { BlogPosts } from '@/components/Post'
+import { BlogPosts } from '@/components/post'
 import { Separator } from '../../components/ui/separator'
 
 export const metadata = {

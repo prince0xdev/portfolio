@@ -300,6 +300,75 @@ export const DATA = {
       ],
       image: "/h-calendar.png",
     },
+    {
+      index: 4,
+      title: "Tokena Financial App(Dashboard)",
+      href: "https://prince.com",
+      description: "I integrate a Tokena Financial (A Dashboard Only) App design on the 2nd edition of  #FigmaToCode",
+      technologies: [
+        "NextJS",
+        "TailwindCSS",
+      ],
+      links: [  
+        {
+          type: "Website",
+          href: "https://hecm-calendar.netlify.app/login",
+          icon: <Globe2Icon className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/prince-dev41/hecm-calendar",
+          icon: <GitHubLogoIcon className=""/>,
+        },
+      ],
+      image: "/tokena-figma2code-project.png"
+    },
+    {
+      index: 5,
+      title: "Ballamas Shop",
+      href: "https://prince.com",
+      description: "I integrate an electronic shop named 'Ballamas's design on the 2nd edition of  #FigmaToCode",
+      technologies: [
+        "NextJS",
+        "TailwindCSS",
+      ],
+      links: [  
+        {
+          type: "Website",
+          href: "https://hecm-calendar.netlify.app/login",
+          icon: <Globe2Icon className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/prince-dev41/hecm-calendar",
+          icon: <GitHubLogoIcon className=""/>,
+        },
+      ],
+      image: "/ballamas.png"
+    },
+    {
+      index: 6,
+      title: "NFT website",
+      href: "https://prince.com",
+      description: "NFT website developped on the 2nd edition of  #FigmaToCode",
+      technologies: [
+        "NextJS",
+        "TailwindCSS",
+      ],
+      links: [  
+        {
+          type: "Website",
+          href: "https://hecm-calendar.netlify.app/login",
+          icon: <Globe2Icon className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/prince-dev41/hecm-calendar",
+          icon: <GitHubLogoIcon className=""/>,
+        },
+      ],
+      image: "/nft-project.png"
+    }
   ],
   certifications: [
     {

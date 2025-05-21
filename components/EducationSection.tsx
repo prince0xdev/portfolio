@@ -31,7 +31,7 @@ function EducationSection() {
                           <div className='rounded-full'><Image className='rounded-full' src={jobs.logoUrl} width={50} height={0} alt={jobs.company}/></div>
                           <div>
                               <div className=' flex items-center gap-6'>
-                                <h3 className='dark:text-gray-200 text-neutral-900  tracking-tight'>{jobs.company}</h3>
+                                <h3 className='dark:text-gray-200 text-neutral-900  tracking-tight'>{jobs.title}</h3>
                                 <ChevronRight className='w-4 text-neutral-500 dark:text-neutral-300'/>
                               </div>
                               <h4 className='text-sm text-muted-foreground tracking-tighter'>{jobs.company}</h4>
