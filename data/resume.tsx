@@ -131,9 +131,9 @@ export const DATA = {
     {
       company: "HECM Calavi",
       href: "https://hecm-afrique.net/",
-      badges: ["Licence 2", "Informatique", "Logiciels"],
+      badges: ["Bachelors's Degree 2", "Computer Science", "Software"],
       location: "Calavi, Bénin",
-      title: "Licence 2 - Systèmes Informatiques et Logiciels",
+      title: "Bachelor's Degree 2 - Computer Systems and Software Engineering",
       logoUrl: "/logo-hecm.webp",
       start: "Octobre 2023",
       end: "Présent",
@@ -147,7 +147,7 @@ export const DATA = {
       ]
     },
     {
-      company: "Collège d'Enseignement Géneral/Paouignan",
+      company: "General Education College/Paouignan",
       href: "#",
       badges: ["BAC", "Série D"],
       location: "Cotonou, Bénin",
@@ -156,7 +156,7 @@ export const DATA = {
       start: "Septembre 2017",
       end: "Juin 2023",
       description:
-        "Rigorous training in mathematics, physics and biology. It was during this period that I discovered my passion for computers science even though I knew nothing about coding. rien du code.",
+        "Rigorous training in mathematics, physics and biology. It was during this period that I discovered my passion for computers science even though I knew nothing about coding.",
       highlights: [
         "Obtaining a high school diploma with honors (AB) in 2023",
         "Discovering web development and the basics of algorithms",
@@ -269,7 +269,7 @@ export const DATA = {
           icon: <GitHubLogoIcon className=""/>,
         },
       ],
-      image: "/h-calendar.png",
+      image: "/virtualr-website.png",
     },
     {
       index: 5,
