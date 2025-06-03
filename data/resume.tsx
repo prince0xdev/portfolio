@@ -286,7 +286,7 @@ export const DATA = {
     {
       index: 4,
       title: "Tokena Financial App(Dashboard)",
-      href: "https://prince.com",
+      href: "https://figma2code-week3-ed2.vercel.app/",
       description: "I integrate a Tokena Financial (A Dashboard Only) App design on the 2nd edition of  #FigmaToCode",
       technologies: [
         "NextJS",
@@ -309,7 +309,7 @@ export const DATA = {
     {
       index: 5,
       title: "Ballamas Shop",
-      href: "https://prince.com",
+      href: "https://figma2-code-week2-ed2.vercel.app/",
       description: "I integrate an electronic shop named 'Ballamas's design on the 2nd edition of  #FigmaToCode",
       technologies: [
         "NextJS",
@@ -318,7 +318,7 @@ export const DATA = {
       links: [  
         {
           type: "Website",
-          href: "hhttps://figma2-code-week2-ed2.vercel.app/",
+          href: "https://figma2-code-week2-ed2.vercel.app/",
           icon: <Globe2Icon className="size-3" />,
         },
         {
@@ -332,7 +332,7 @@ export const DATA = {
     {
       index: 6,
       title: "NFT website",
-      href: "https://prince.com",
+      href: "https://figma-to-code-challeenge-week1-by-prince-ekpinse.vercel.app/",
       description: "NFT website developped on the 2nd edition of  #FigmaToCode",
       technologies: [
         "NextJS",
@@ -341,7 +341,7 @@ export const DATA = {
       links: [  
         {
           type: "Website",
-          href: "hhttps://figma-to-code-challeenge-week1-by-prince-ekpinse.vercel.app/",
+          href: "https://figma-to-code-challeenge-week1-by-prince-ekpinse.vercel.app/",
           icon: <Globe2Icon className="size-3" />,
         },
         {
