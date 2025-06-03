@@ -163,42 +163,6 @@ export const DATA = {
         "Découverte du développement web et des bases en algorithmique",
         "Organisation d'ateliers tech et responsable du club de sciences"
       ]
-    },
-    {
-      company: "Collège d'Enseignement Géneral/Paouignan",
-      href: "#",
-      badges: ["BEPC", "Générale"],
-      location: "Abomey-Calavi, Bénin",
-      title: "Brevet d'Études du Premier Cycle (BEPC)",
-      logoUrl: "/ekpinse.webp",
-      start: "Septembre 2016",
-      end: "Juin 2020",
-      description:
-        "Cycle secondaire marqué par une orientation vers les sciences exactes et la logique mathématique. C’est aussi là que j’ai été initié à l’informatique scolaire.",
-      highlights: [
-        "Obtention du BEPC avec mention Assez Bien",
-        "Participation aux olympiades régionales de mathématiques",
-        "Premiers contacts avec les outils numériques et les clubs tech",
-        "Développement d’un fort esprit d’analyse et de collaboration"
-      ]
-    },
-    {
-      company: "École Primaire Publique Domè Paouignan A",
-      href: "#",
-      badges: ["CEP", "Fondamentale"],
-      location: "Tankpè, Abomey-Calavi, Bénin",
-      title: "Certificat d'Études Primaires (CEP)",
-      logoUrl: "/ekpinse.webp",
-      start: "Septembre 2011",
-      end: "Juin 2016",
-      description:
-        "Études primaires à Paouignan où j’ai acquis les compétences de base en français, mathématiques et culture générale, tout en développant ma discipline personnelle.",
-      highlights: [
-        "Obtention du CEP avec mention Bien",
-        "Participation aux concours de calcul mental et dictée",
-        "Bon niveau en expression écrite et orale",
-        "Développement de l’esprit de rigueur et de curiosité"
-      ]
     }
   ],
   projects: [
@@ -264,7 +228,7 @@ export const DATA = {
       dates: "January 2025 - Present",
       active: true,
       description:
-        "Gérez vos emplois du temps plus facilement",
+        "Managed to integrate a calendar application for HECM University, allowing students to view their schedules.",
       technologies: [
         "NextJS",
         "TailwindCSS",
@@ -283,8 +247,33 @@ export const DATA = {
       ],
       image: "/h-calendar.png",
     },
+    { index: 4,
+      title: "Virtual-R Website",
+      href: "https://virtual-r-by-prince-ekpinse.vercel.app/",
+      dates: "December 2024 - Present",
+      active: true,
+      description:
+        "A simple landing page for a virtual reality product",
+      technologies: [
+        "NextJS",
+        "TailwindCSS",
+      ],
+      links: [  
+        {
+          type: "Website",
+          href: "https://virtual-r-by-prince-ekpinse.vercel.app/",
+          icon: <Globe2Icon className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/prince-dev41/VirtualR",
+          icon: <GitHubLogoIcon className=""/>,
+        },
+      ],
+      image: "/h-calendar.png",
+    },
     {
-      index: 4,
+      index: 5,
       title: "Tokena Financial App(Dashboard)",
       href: "https://figma2code-week3-ed2.vercel.app/",
       description: "I integrate a Tokena Financial (A Dashboard Only) App design on the 2nd edition of  #FigmaToCode",
@@ -307,7 +296,7 @@ export const DATA = {
       image: "/tokena-figma2code-project.png"
     },
     {
-      index: 5,
+      index: 6,
       title: "Ballamas Shop",
       href: "https://figma2-code-week2-ed2.vercel.app/",
       description: "I integrate an electronic shop named 'Ballamas's design on the 2nd edition of  #FigmaToCode",
@@ -330,7 +319,7 @@ export const DATA = {
       image: "/ballamas.png"
     },
     {
-      index: 6,
+      index: 7,
       title: "NFT website",
       href: "https://figma-to-code-challeenge-week1-by-prince-ekpinse.vercel.app/",
       description: "NFT website developped on the 2nd edition of  #FigmaToCode",
