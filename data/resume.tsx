@@ -19,30 +19,13 @@ export const DATA = {
   description: "Security Engineer | Cloud Infrastructure Security | Secure Software Development",
   summary: "Security engineer with expertise in developing secure full-stack applications, implementing zero-trust deployment pipelines, and automating security controls. Focused on proactive security design patterns for cloud infrastructure (AWS, GCP) and container technologies.",
   avatarUrl: "/me.png",
-  skills: [
-    "Cloud Security (AWS/GCP)",
-    "CI/CD Security",
-    "Docker Containerization",
-    "Infrastructure as Code",
-    "Zero-Trust Architecture",
-    "Security Automation",
-    "Terraform",
-    "Ansible",
-    "TypeScript/JavaScript",
-    "Python",
-    "Next.js/React",
-    "FastAPI",
-    "SQL/Database Security",
-    "GitHub Actions",
-    "Linux Administration",
-  ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
     { href: "/blog", icon: NotebookIcon, label: "Blog" },
   ],
   contact: {
-    email: "conorquinlan@cloud.com",
-    tel: "+12064503502",
+    email: "princeekinse97@gmail.com",
+    tel: "+2290141322242",
     social: {
       GitHub: {
         name: "GitHub",
@@ -312,12 +295,12 @@ export const DATA = {
       links: [  
         {
           type: "Website",
-          href: "https://hecm-calendar.netlify.app/login",
+          href: "https://figma2code-week3-ed2.vercel.app/",
           icon: <Globe2Icon className="size-3" />,
         },
         {
           type: "Source",
-          href: "https://github.com/prince-dev41/hecm-calendar",
+          href: "https://github.com/prince-dev41/tokena-dashboard",
           icon: <GitHubLogoIcon className=""/>,
         },
       ],
@@ -335,12 +318,12 @@ export const DATA = {
       links: [  
         {
           type: "Website",
-          href: "https://hecm-calendar.netlify.app/login",
+          href: "hhttps://figma2-code-week2-ed2.vercel.app/",
           icon: <Globe2Icon className="size-3" />,
         },
         {
           type: "Source",
-          href: "https://github.com/prince-dev41/hecm-calendar",
+          href: "https://github.com/prince-dev41/ballamas",
           icon: <GitHubLogoIcon className=""/>,
         },
       ],
@@ -358,12 +341,12 @@ export const DATA = {
       links: [  
         {
           type: "Website",
-          href: "https://hecm-calendar.netlify.app/login",
+          href: "hhttps://figma-to-code-challeenge-week1-by-prince-ekpinse.vercel.app/",
           icon: <Globe2Icon className="size-3" />,
         },
         {
           type: "Source",
-          href: "https://github.com/prince-dev41/hecm-calendar",
+          href: "https://github.com/prince-dev41/nft-website",
           icon: <GitHubLogoIcon className=""/>,
         },
       ],
@@ -372,10 +355,18 @@ export const DATA = {
   ],
   certifications: [
     {
-      name: "AWS Certified Security - Specialty",
-      issuer: "Amazon Web Services",
-      date: "2024",
-      logo: "/aws-security-cert.png"
+      name: "https://api.badgr.io/public/assertions/CMAQhmGAQia_G2YNyMRdCg",
+      issuer: "Postman",
+      date: "April 2025",
+      logo: "/aws-security-cert.png",
+      verificationUrl: "https://www.credly.com/badges/12345678-1234-1234-1234-123456789012/public_url",
+    },
+    {
+      name: "Musixmatch Graduate",
+      issuer: "Musixmatch",
+      date: "January 2025",
+      logo: "/aws-security-cert.png",
+      verificationUrl: "https://drive.google.com/file/d/1pUAwVKU9U9KCkTXVtVHMJqOw6El2YPXK/view?usp=sharing",
     },
   ],
 } as const;

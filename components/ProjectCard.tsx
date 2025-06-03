@@ -37,14 +37,14 @@ const ProjectCard: React.FC<ProjectCardProps> = ({index,title, href, description
             <div className="flex gap-2">
                 {links.map((link, index) => (
                     <Link
-                    key={index}
-                    href={link.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-1 text-sm text-blue-500 hover:scale-95 transition-all duration-200 rounded-full justify-center w-[100px] border border-gray-950[.1] dark:border-gray-50/[.1]"
-                    >
-                    {link.icon}
-                    {link.type}
+                        key={index}
+                        href={link.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-1 text-sm text-blue-500 hover:scale-95 transition-all duration-200 rounded-full justify-center w-[100px] border border-gray-950[.1] dark:border-gray-50/[.1]"
+                        >
+                        {link.icon}
+                        {link.type}
                     </Link>
                 ))}
             </div>
