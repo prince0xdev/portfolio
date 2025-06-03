@@ -138,12 +138,12 @@ export const DATA = {
       start: "Octobre 2023",
       end: "Présent",
       description:
-        "Parcours universitaire axé sur le développement logiciel, les réseaux et la sécurité. Cette formation m’a permis d’explorer des domaines comme le front-end, les SaaS, et la cybersécurité.",
+        "University course focused on software development with some basic networking. This training allowed me to explore areas such as front-end, SaaS, and cybersecurity.",
       highlights: [
-        "Projets personnels en React.js, Next.js et TailwindCSS (ex: LinkVibe, Parcours)",
-        "Initiation à la cybersécurité avec Google Cloud Shell et Kali Linux",
-        "Développement de solutions SaaS orientées productivité, freelancing et éducation",
-        "Création de contenu tech sur LinkedIn avec +3000 abonnés"
+        "Personal projects in React.js, Next.js, and TailwindCSS (e.g., LinkVibe, Parcours)",
+        "Learning algorithms, data structures, and relational and NoSQL databases",
+        "Participation in hackathons and web development workshops",
+        "Creating tech content on LinkedIn with over 3,000 followers"
       ]
     },
     {
@@ -151,17 +151,16 @@ export const DATA = {
       href: "#",
       badges: ["BAC", "Série D"],
       location: "Cotonou, Bénin",
-      title: "Baccalauréat Scientifique - Série D",
+      title: "Scientific Baccalaureate - Series D",
       logoUrl: "/ekpinse.webp",
-      start: "Septembre 2020",
+      start: "Septembre 2017",
       end: "Juin 2023",
       description:
-        "Formation rigoureuse en mathématiques, physique et SVT. C’est pendant cette période que j’ai découvert ma passion pour l'informatique et commencé à coder.",
+        "Rigorous training in mathematics, physics and biology. It was during this period that I discovered my passion for computers science even though I knew nothing about coding. rien du code.",
       highlights: [
-        "Obtention du BAC avec mention",
-        "Lancement d’un site de révisions pour aider mes camarades",
-        "Découverte du développement web et des bases en algorithmique",
-        "Organisation d'ateliers tech et responsable du club de sciences"
+        "Obtaining a high school diploma with honors (AB) in 2023",
+        "Discovering web development and the basics of algorithms",
+        "Participation in reading and dictation competitions as part of a school program"
       ]
     }
   ],
@@ -173,7 +172,7 @@ export const DATA = {
       dates: "April 2025 - Present",
       active: true,
       description:
-        "Developed a portfolio website to demonstrate my skills and system design capabilities.",
+        "Developed a portfolio website to demonstrate my skills and projects. The site is built with Next.js, TypeScript, and ShadCN components for a modern, responsive design.",
       technologies: [
         "NextJS",
         "TypeScript",
