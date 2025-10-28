@@ -10,12 +10,13 @@ export const DATA = {
   location: "Cotonou, Republic of Benin",
   title: "Front-end Developer @Freelance",
   about: [
-    "I'm a Front-End Developer passionate about building intuitive, responsive, and creative web experiences. With a strong foundation in React, Next.js, and Tailwind CSS, I specialize in translating ideas into clean, functional interfaces that elevate user engagement and bring digital products to life.",
+    "I'm Prince Ekpinse, a Junior Front-End Developer from Benin, passionate about crafting intuitive, responsive, and creative web experiences. With solid expertise in React.js, Next.js, and Tailwind CSS, I transform ideas into clean, interactive interfaces that engage users and bring digital products to life.",
 
-    "Whether working on personal projects like CodeSweep, LinkVibe, H-Calendar or contributing to tech-for-good initiatives, I thrive at the intersection of design and code. I also explore API integrations, real-time analytics, and user-first experiences to push the limits of what front-end can do.",
+    "I love building projects that combine functionality and design — from personal ventures like LinkVibe, H-Calendar, and my YouTube Thumbnail Generator, to exploring APIs, real-time analytics, and innovative front-end solutions. I thrive at the intersection of code, UX, and performance, always pushing the limits of what web interfaces can achieve.",
 
-    "Beyond development, I consider myself as an active voice in the African tech community on LinkedIn, sharing my journey, building in public, and inspiring others to create with purpose. I'm always open to exciting freelance opportunities and innovative collaborations.",
+    "Beyond coding, I actively share my journey and insights in the African tech community on LinkedIn, building in public, inspiring young developers, and contributing to collaborative, tech-for-good initiatives. I'm open to freelance projects, partnerships, and opportunities where creativity meets code.",
   ],
+
   locationLink: "https://www.google.com/maps/place/boulder",
   description:
     "Security Engineer | Cloud Infrastructure Security | Secure Software Development",
@@ -54,56 +55,59 @@ export const DATA = {
     {
       company: "FeexPay",
       href: "https://feexpay.me/",
-      badges: ["Web", "Mobile", "Frontedn"],
-      location: "Cotonou, Atlantique, Bénin",
-      title: "Web Developer Intern (currently)",
+      badges: ["Web", "Mobile", "Frontend"],
+      location: "Cotonou, Atlantique, Benin",
+      title: "Web Developer Intern",
       logoUrl: "/logo-feexpay.png",
       start: "June 2025",
       end: "August 2025",
       description:
-        "FeexPay is a Fintech company based in Benin and delivers electronics payments solutions accross  5 countries of  West Africa",
+        "FeexPay is a leading Fintech company in West Africa, providing seamless electronic payment solutions across 5 countries.",
       highlights: [
-        "Updated the FeexLink checkout page, improving user experience and reducing checkout drop-off.",
-        "Updated and maintained FeexPay Flutter SDK from versions 1.0.10 → 1.0.12, ensuring compatibility and improving stability for 200+ developers using the SDK.",
-        "Participated in code reviews and contributed to reducing bugs in production from customers.",
+        "Redesigned and optimized the FeexLink checkout page, significantly improving user experience and reducing checkout drop-offs.",
+        "Maintained and upgraded FeexPay Flutter SDK (v1.0.10 → v1.0.12), enhancing stability and compatibility for 200+ developers.",
+        "Actively participated in code reviews, identifying bugs early and improving production reliability.",
+        "Collaborated with cross-functional teams to deliver robust, production-ready features under tight deadlines.",
       ],
     },
     {
       company: "PHITEC",
       href: "http://xedo.app/",
       badges: ["Front-End"],
-      location: "Remote / Cotonou, Bénin",
+      location: "Remote / Cotonou, Benin",
       title: "Front-End Developer",
       logoUrl: "/logo.jpg",
       start: "August 2024",
       end: "Present",
       description:
-        "Worked on 'Parcours' applications building landing page and admin dashboard with React and Build the catalog app for Xedo using Nextjs 15, HeroUI & TailwindCSS and consume api build with nestjs",
+        "Contributing to the development of SaaS and mobile web applications, including landing pages, dashboards, and catalog apps using modern React and Next.js stack.",
       highlights: [
-        "Developed responsive React components with TailwindCSS and Shadcn/UI for dynamic dashboards and SaaS interfaces",
-        "Deploy project with Docker on VPS using Github Actions",
-        "Fix production bugs"
+        "Built responsive, modular React components with TailwindCSS and Shadcn/UI for dynamic dashboards and SaaS interfaces.",
+        "Implemented seamless API consumption from NestJS backends, ensuring real-time data flow and smooth UX.",
+        "Managed deployment pipelines using Docker and GitHub Actions on VPS environments.",
+        "Diagnosed and resolved production bugs, improving app stability and user satisfaction.",
       ],
     },
     {
       company: "RAB TECH",
       href: "https://rab-tech.com/",
       badges: ["Flutter", "Mobile"],
-      location: "Cotonou, Atlantique, Bénin",
+      location: "Cotonou, Atlantique, Benin",
       title: "Flutter Developer Intern",
       logoUrl: "/rab-tech.jpeg",
       start: "July 2024",
       end: "August 2024",
       description:
-        "As part of a 2-month academic internship, I contributed to the development of a Flutter-based mobile app while strengthening my skills in mobile architecture and state management.",
+        "Completed a 1-month academic internship contributing to cross-platform mobile apps with Flutter, while learning professional development workflows.",
       highlights: [
-        "Discovered and contributed to mobile development projects using Flutter.",
-        "Discovered the workflow of development teams in a professional setting.",
-        "Strengthened understanding of cross-platform development.",
-        "Collaborated with cross-functional teams, enhancing communication and collaboration.",
+        "Developed Flutter-based mobile app features, improving functionality and performance.",
+        "Learned professional development workflows, version control, and team collaboration practices.",
+        "Strengthened understanding of cross-platform architecture and state management.",
+        "Collaborated with cross-functional teams to deliver features efficiently and maintain code quality.",
       ],
     },
   ],
+
   education: [
     {
       school: "HECM University",
