@@ -44,7 +44,7 @@ function ExperienceSection() {
               </CollapsibleTrigger>
               <CollapsibleContent>
                 <div className='text-sm text-muted-foreground tracking-tighter py-3'>
-                  <p className='mb-3'>{jobs.description}</p>
+                  {jobs.description && <p className='mb-3'>{jobs.description}</p>}
                   <ul className="flex flex-col gap-2">
                   {jobs.highlights.map((highlight, index)=><div  key={index}>
                     <li><span className='rounded-full w-5 bg-gray-300'></span>{highlight}</li>

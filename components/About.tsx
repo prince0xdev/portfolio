@@ -5,13 +5,12 @@ import { TypingAnimation } from "@/components/magicui/typing-animation";
 import Link from 'next/link';
 
 export default function AboutSection() {
-  // pargarphs of about section
   const paragraphs = DATA.about;
   return (
     <section className="flex flex-col gap-2 justify-center"  data-aos="fade-in">
       <BlurFade inView>
         <h1 className='text-xl pb-4'>About</h1>
-        <Link href="/prince-ekpinse.pdf" className='shadow-sm border border-neutral-300 dark:border-neutral-700 hover:scale-90 duration-200 transition-all shadow-neutral-400  dark:shadow-gray-200 rounded-full p-3 flex items-center justify-center w-[200px]'>
+        <Link href="/resume-prince-ekpinse.pdf" className='shadow-sm border border-neutral-300 dark:border-neutral-700 hover:scale-90 duration-200 transition-all shadow-neutral-400  dark:shadow-gray-200 rounded-full p-3 flex items-center justify-center w-[200px]'>
           <button>
             My Resume
           </button>
