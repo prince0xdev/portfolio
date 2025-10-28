@@ -1,28 +1,46 @@
-# Hey there 👋
+# 🚀 Personal Portfolio Website
 
-I'm **Prince Ekpinse** — a 19-year-old **front-end developer** from **Benin**, passionate about building fast, clean, and creative web experiences using **React.js**, **Next.js**, and **Tailwind CSS**.
+## Overview
 
-I'm a curious and proactive learner, always exploring new technologies and pushing my limits.  
-My mission: connect the world through **clean code**, **innovation**, and a spark of **African creativity**.
+Welcome to my portfolio repository! This is a modern, responsive personal portfolio website built with Next.js 15, React 19, and Tailwind CSS. It showcases my projects, skills, and professional journey as a front-end developer.
+
+I'm **Prince Ekpinse** — a 19-year-old **front-end developer** from **Benin**, passionate about building fast, clean, and creative web experiences. My mission is to connect the world through **clean code**, **innovation**, and a spark of **African creativity**.
 
 Always open to exciting collaborations and tech challenges 🚀
 
 ## 💡 About Me
-- 💻 Junior Front-End Developer Intern at [FeexPay](https://feexpay.me/)
+- 💻 [Ex] Junior Front-End Developer Intern at [FeexPay](https://feexpay.me/)
 - 🔭 Currently building [**Code Sweep**](https://github.com/prince0xdev/code-sweap) — a vscode extension to clean your code in one click.
 - 🌱 Learning more about **Next.js** and building **RESTful APIs**  
 - 🤝 Open to contributing to open-source projects and practical solutions  
 - 📝 I share my journey on [LinkedIn](https://www.linkedin.com/in/prince-ekpinse/)  
-- 🌐 Portfolio: [ekpinse-prince.vercel.app](https://ekpinse-prince.vercel.app)  
+- 🌐 Portfolio: [prince0xdev.vercel.app](https://prince0xdev.vercel.app)  
 - 📩 Contact me: `princeekpinse97@gmail.com`
 
 ---
 
+## ✨ Project Features
+
+### Core Functionality
+- 🌙 **Dark/Light Mode** - Seamless theme switching
+- 📱 **Responsive Design** - Optimized for all devices
+- 🎨 **Modern UI Components** - Built with Radix UI
+- 📝 **Blog Platform** - MDX-powered with syntax highlighting
+- ⚡ **Performance Optimized** - Built with Next.js 15 and Turbopack
+- 🔍 **SEO Friendly** - Optimized meta tags and sitemap
+
+### Interactive Elements
+- 📊 **Scroll Progress** - Visual progress indicator
+- 🌐 **Globe Visualization** - Interactive 3D globe
+- ✨ **Particle Effects** - Dynamic background animations
+- ⌨️ **Typing Animations** - Engaging text displays
+- 🎯 **Interactive Buttons** - Custom hover effects
+
 ## 🚀 Featured Projects  
-- [**Code Sweep**](https://github.com/prince0xdev/h-calendar) — Remove and uncomment your code in one click. Supports multiple languages including more 30 most used languages.
-- [**Country Selector (JS Library)**](https://www.npmjs.com/package/country-selector-lite) — A vscode extension to remove and uncomment your code in one click. Supports multiple languages including HTML
-- [**LinkVibe**](https://github.com/prince0xdev/LinkVibes) — Centralize and track all your links in one place  
-- [**H-Calendar**](https://github.com/prince0xdev/h-calendar) — Dashboard for managing school class timetables
+- [**Code Sweep**](https://github.com/prince0xdev/h-calendar) — VS Code extension for code cleanup
+- [**Country Selector**](https://www.npmjs.com/package/country-selector-lite) — JavaScript library for country selection
+- [**LinkVibe**](https://github.com/prince0xdev/LinkVibes) — Link management platform
+- [**H-Calendar**](https://github.com/prince0xdev/h-calendar) — School timetable management system
 
 ---
 
@@ -43,48 +61,37 @@ Always open to exciting collaborations and tech challenges 🚀
 
 ---
 
-## 🧰 Tech Stack
-<p>
-  <img src="https://img.shields.io/badge/HTML5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white" />
-  <img src="https://img.shields.io/badge/CSS3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white" />
-  <img src="https://img.shields.io/badge/JavaScript-%23F7DF1E.svg?style=for-the-badge&logo=javascript&logoColor=black" />
-  <img src="https://img.shields.io/badge/React-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB" />
-  <img src="https://img.shields.io/badge/Next.js-%23000000.svg?style=for-the-badge&logo=next.js&logoColor=white" />
-  <img src="https://img.shields.io/badge/TailwindCSS-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white" />
-  <img src="https://img.shields.io/badge/Git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white" />
-  <img src="https://img.shields.io/badge/Netlify-%2300C7B7.svg?style=for-the-badge&logo=netlify&logoColor=white" />
-</p>
+## 🛠️ Tech Stack
 
----
+### Core
+- **Framework:** Next.js 15 (with Turbopack)
+- **Language:** TypeScript
+- **UI Library:** React 19
+- **Styling:** Tailwind CSS, Radix UI
+- **Animations:** Framer Motion
 
-## 📊 GitHub Stats
-<p>
-  <img src="https://github-readme-stats.vercel.app/api?username=prince0xdev&show_icons=true&theme=radical" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=prince0xdev&layout=compact&theme=radical" />
-</p>
+### Content & Rendering
+- **Blog Engine:** MDX with remark/rehype plugins
+- **Syntax Highlighting:** rehype-highlight, sugar-high
+- **Date Handling:** date-fns
 
----
+### UI Components & Features
+- **UI Libraries:** Radix UI (Collapsible, Dialog, Tooltip)
+- **Icons:** Lucide React, Radix Icons
+- **Theming:** next-themes
+- **Animations:** Custom MagicUI components
 
-## 🔥 GitHub Streaks
-![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=prince0xdev&theme=radical)
-
----
-
-## 🏆 GitHub Trophies
-![Trophies](https://github-profile-trophy.vercel.app/?username=prince0xdev&theme=darkhub&no-bg=true)
-
----
-
-## 🎧 Spotify Now Playing
-[![Spotify](https://novatorem.bgstatic.vercel.app/api/spotify)](https://open.spotify.com/user/31qrstikxab6rlywen3bwldmqvim?si=f58ff6b48a1040ad)
+### Development & Deployment
+- **Type Checking:** TypeScript
+- **Linting:** ESLint
+- **Package Manager:** npm
+- **Deployment:** Vercel
+- **Analytics:** Vercel Analytics
 
 ---
 
 ## 💬 Feedback is Welcome
 Open an issue or contact me directly — I’m always up for feedback and collaboration!
-
-## ✍️ Random Dev Quote
-![Dev Quote](https://quotes-github-readme.vercel.app/api?type=horizontal)
 
 ---
 
