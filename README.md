@@ -9,6 +9,7 @@ I'm **Prince Ekpinse** — a 19-year-old **front-end developer** from **Benin**,
 Always open to exciting collaborations and tech challenges 🚀
 
 ## 💡 About Me
+
 - 💻 [Ex] Junior Front-End Developer Intern at [FeexPay](https://feexpay.me/)
 - 🔭 Currently building [**Code Sweep**](https://github.com/prince0xdev/code-sweap) — a vscode extension to clean your code in one click.
 - 🌱 Learning more about **Next.js** and building **RESTful APIs**  
@@ -36,28 +37,7 @@ Always open to exciting collaborations and tech challenges 🚀
 - ⌨️ **Typing Animations** - Engaging text displays
 - 🎯 **Interactive Buttons** - Custom hover effects
 
-## 🚀 Featured Projects  
-- [**Code Sweep**](https://github.com/prince0xdev/h-calendar) — VS Code extension for code cleanup
-- [**Country Selector**](https://www.npmjs.com/package/country-selector-lite) — JavaScript library for country selection
-- [**LinkVibe**](https://github.com/prince0xdev/LinkVibes) — Link management platform
-- [**H-Calendar**](https://github.com/prince0xdev/h-calendar) — School timetable management system
 
----
-
-![Profile Views](https://komarev.com/ghpvc/?username=prince0xdev&color=blue)
-
-## 🌐 Connect with Me
-<p>
-  <a href="https://www.linkedin.com/in/prince-ekpinse/" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white" />
-  </a>
-  <a href="https://github.com/prince0xdev" target="_blank">
-    <img src="https://img.shields.io/badge/GitHub-%23181717.svg?style=for-the-badge&logo=github&logoColor=white" />
-  </a>
-  <a href="https://x.com/prince0xdev" target="_blank">
-    <img src="https://img.shields.io/badge/Twitter-%231DA1F2.svg?style=for-the-badge&logo=twitter&logoColor=white" />
-  </a>
-</p>
 
 ---
 
@@ -94,5 +74,18 @@ Always open to exciting collaborations and tech challenges 🚀
 Open an issue or contact me directly — I’m always up for feedback and collaboration!
 
 ---
+
+## 🌐 Connect with Me
+<p>
+  <a href="https://www.linkedin.com/in/prince-ekpinse/" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white" />
+  </a>
+  <a href="https://github.com/prince0xdev" target="_blank">
+    <img src="https://img.shields.io/badge/GitHub-%23181717.svg?style=for-the-badge&logo=github&logoColor=white" />
+  </a>
+  <a href="https://x.com/prince0xdev" target="_blank">
+    <img src="https://img.shields.io/badge/Twitter-%231DA1F2.svg?style=for-the-badge&logo=twitter&logoColor=white" />
+  </a>
+</p>
 
 **Thanks for stopping by! Let’s build something great together 🚀**
