@@ -1,6 +1,6 @@
 {
-  "name": "portfolio",
-  "version": "0.1.0",
+  "name": "my-portfolio",
+  "version": "0.4.0",
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
@@ -29,7 +29,7 @@
     "cobe": "^0.6.3",
     "date-fns": "^4.1.0",
     "flowbite": "^3.1.2",
-    "framer-motion": "^12.7.2",
+    "framer-motion": "^12.23.24",
     "fs-extra": "^11.3.0",
     "gray-matter": "^4.0.3",
     "lucide-react": "^0.488.0",

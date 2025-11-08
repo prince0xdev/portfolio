@@ -137,3 +137,30 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Scrollbar personnalisée */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0d1b0d;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ecc94b;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ecc94b;
+}
+
+/* Styles pour Masonry layout */
+.masonry-column {
+  background-clip: padding-box;
+}
+
+.masonry-column > div {
+  margin-bottom: 2rem;
+}
