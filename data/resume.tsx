@@ -49,6 +49,12 @@ export const DATA = {
         icon: Icons.x,
         navbar: true,
       },
+      // Medium : {
+      //   name: "Medium",
+      //   url: "https://prince0xdev.medium.com/",
+      //   icon: Icons.medium,
+      //   navbar: true,
+      // },
     },
   },
   work: [
