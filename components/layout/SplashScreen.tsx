@@ -11,16 +11,16 @@ interface SplashScreenProps {
 export default function SplashScreen({ onAnimationComplete }: SplashScreenProps) {
   const [showText, setShowText] = useState(false);
   const [displayText, setDisplayText] = useState("");
+  const [slideDown, setSlideDown] = useState(false);
   const fullText = "WELCOME";
 
+  // Étape 1 : attendre avant d'afficher le texte
   useEffect(() => {
-    const timer1 = setTimeout(() => {
-      setShowText(true);
-    }, 3000);
-
+    const timer1 = setTimeout(() => setShowText(true), 3000);
     return () => clearTimeout(timer1);
   }, []);
 
+  // Étape 2 : effet de frappe du texte
   useEffect(() => {
     if (showText) {
       let i = 0;
@@ -30,15 +30,15 @@ export default function SplashScreen({ onAnimationComplete }: SplashScreenProps)
         if (i === fullText.length) {
           clearInterval(typingInterval);
           setTimeout(() => {
-            onAnimationComplete();
+            setSlideDown(true); // Lance l’effet de descente
           }, 1000);
         }
       }, 150);
-
       return () => clearInterval(typingInterval);
     }
-  }, [showText, onAnimationComplete]);
+  }, [showText]);
 
+  // Animation des trois points initiaux
   const dotVariants = {
     initial: { y: "0%" },
     animate: { y: "100%" },
@@ -53,22 +53,28 @@ export default function SplashScreen({ onAnimationComplete }: SplashScreenProps)
 
   return (
     <motion.div
-      initial={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-      transition={{ duration: 0.5, delay: 4.5 }}
-      className="fixed inset-0 flex flex-col items-center justify-center bg-neutral-800 z-50"
+      initial={{ y: "0%" }}
+      animate={slideDown ? { y: "100%" } : { y: "0%" }}
+      transition={{ duration: 1.5, ease: [0.65, 0, 0.35, 1] }} // effet smooth et lent
+      onAnimationComplete={() => {
+        if (slideDown) onAnimationComplete();
+      }}
+      className="fixed inset-0 flex flex-col items-center justify-center bg-neutral-900 z-50 overflow-hidden"
     >
-      <Particles 
-                className="fixed inset-0 -z-10" 
-                quantity={250}
-                color="#8b5cf6"
-                ease={20}
-                size={0.6}
-                staticity={30}
-                refresh={true}
-              />
+      {/* Particules en arrière-plan */}
+      <Particles
+        className="fixed inset-0 -z-10"
+        quantity={250}
+        color="#8b5cf6"
+        ease={20}
+        size={0.6}
+        staticity={30}
+        refresh={true}
+      />
+
+      {/* Phase 1 : points de chargement */}
       {!showText ? (
-        <div className="flex space-x-4"> {}
+        <div className="flex space-x-4">
           <motion.span
             variants={dotVariants}
             initial="initial"
@@ -96,12 +102,9 @@ export default function SplashScreen({ onAnimationComplete }: SplashScreenProps)
           initial={{ scale: 0.5, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
           transition={{ duration: 0.5 }}
-          className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-bold text-white"
+          className="text-6xl sm:text-8xl font-bold text-white"
         >
-          <span className="text-yellow-500">{displayText.slice(0, 2)}</span>{}
-          <span className="text-yellow-500">{displayText.slice(2, 5)}</span>{}
-          <span className="text-yellow-500">{displayText.slice(5, 7)}</span>{}
-          <span className="text-yellow-500">...</span>{}
+          <span className="text-yellow-500">{displayText}</span>
         </motion.h1>
       )}
     </motion.div>
