@@ -44,6 +44,8 @@ function Footer() {
                 <TooltipTrigger asChild>
                   <Link
                     href={social.url}
+                    target='_blank'
+                    rel="noopener noreferrer"
                   >
                     <social.icon className="size-4" />
                   </Link>

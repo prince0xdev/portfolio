@@ -8,6 +8,7 @@ import { TooltipProvider } from "@/components/ui/tooltip"
 import Footer from "@/components/layout/Footer";
 import { ScrollProgress } from "@/components/magicui/scroll-progress";
 import { Analytics } from '@vercel/analytics/next';
+import LayoutClientWrapper from "@/components/layout/LayoutClientWrapper";
 
 const outfit = Outfit({
   variable: "--font-outfit",
@@ -69,7 +70,7 @@ export default function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <TooltipProvider>
             <Header/>
-            {children}
+            <LayoutClientWrapper>{children}</LayoutClientWrapper>
             <Footer/>
           </TooltipProvider>
         </ThemeProvider>
