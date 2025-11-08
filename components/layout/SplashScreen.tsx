@@ -104,7 +104,7 @@ export default function SplashScreen({ onAnimationComplete }: SplashScreenProps)
           transition={{ duration: 0.5 }}
           className="text-6xl sm:text-8xl font-bold text-white"
         >
-          <span className="text-yellow-500">{displayText}</span>
+          <span className="text-yellow-500">{displayText}...</span>
         </motion.h1>
       )}
     </motion.div>
