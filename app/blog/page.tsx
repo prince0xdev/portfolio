@@ -1,6 +1,7 @@
 import { BlurFade } from '@/components/magicui/blur-fade'
-import { BlogPosts } from '@/components/post'
 import { Separator } from '../../components/ui/separator'
+import { getBlogPosts } from './utils'
+import BlogList from '@/components/post'
 
 export const metadata = {
   title: 'Welcome on my personal Blog',
@@ -8,13 +9,16 @@ export const metadata = {
 }
 
 export default function Page() {
+  
+  const allBlogs = getBlogPosts()
+  console.log(allBlogs)
   return (
     <section>
       <BlurFade>
         <h1 className='text-xl pb-4'>My Blog</h1>
       </BlurFade>
       <Separator className='h-2 mb-4'/>
-      <BlogPosts />
+      <BlogList posts={allBlogs} />
     </section>
   )
 }
