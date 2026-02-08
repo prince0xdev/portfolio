@@ -6,7 +6,7 @@ export const DATA = {
   name: "Prince Ekpinse",
   age: 19,
   initials: "PE",
-  url: "https://conorq.com",
+  url: "https://prince0xdev.vercel.app",
   location: "Cotonou, Republic of Benin",
   title: "Front-end Developer @Freelance",
   about: [
@@ -130,7 +130,7 @@ export const DATA = {
       href: "https://hecm-afrique.net/",
       badges: ["Bachelors's Degree 3", "Computer Science", "Software"],
       location: "Calavi, Bénin",
-      title: "Bachelor's Degree 2 - Computer Systems and Software Engineering",
+      title: "Bachelor's Degree 3 - Computer Systems and Software Engineering",
       logoUrl: "/logo-hecm.webp",
       start: "Octobre 2023",
       end: "Présent",
