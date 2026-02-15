@@ -21,6 +21,9 @@ export const metadata: Metadata = {
   description: "Découvre Parcours, la plateforme qui révolutionne le suivi scolaire et universitaire.",
   keywords: ["Parcours", "éducation", "suivi scolaire", "Bénin", "université"],
   authors: [{ name: "Prince Ekpinse", url: "https://linkedin.com/in/prince-ekpinse" }],
+  verification: {
+    google: "lq2Bn5-k4x4Tjf2m0zkweh0quF92_E-mytl2fw5sfIw",
+  },
   openGraph: {
     title: "Prince Ekpinse | Student (SWE) and Junior Frontend Developer",
     description: "I'm junior frontend developer aspiring being a Software Engineer (SWE) already ready for collaborations",
