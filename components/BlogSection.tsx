@@ -3,8 +3,8 @@ import { BlurFade } from './magicui/blur-fade'
 import { InteractiveHoverButton } from './magicui/interactive-hover-button'
 import { Separator } from './ui/separator'
 import Link from 'next/link'
-import { getBlogPosts } from '@/app/blog/utils'
 import BlogList from './post'
+import { getBlogPosts } from '@/app/(main)/blog/utils'
 
 function BlogSection() {
   const allBlogs = getBlogPosts() 

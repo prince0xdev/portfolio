@@ -13,8 +13,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body className="antialiased dark:bg-neutral-800 relative bg-gray-100">
+    <div className="antialiased dark:bg-neutral-800 relative bg-gray-100">
         <Particles className="fixed inset-0 -z-10" quantity={250} color="#8b5cf6" ease={20} size={0.6} staticity={30} refresh={true} />
         <ScrollProgress className="h-1" />
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
@@ -26,8 +25,6 @@ export default function RootLayout({
             <Footer />
           </TooltipProvider>
         </ThemeProvider>
-      </body>
-
-    </html>
+      </div>
   );
 }

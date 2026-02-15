@@ -1,7 +1,7 @@
 import { BlurFade } from '@/components/magicui/blur-fade'
-import { Separator } from '../../components/ui/separator'
 import { getBlogPosts } from './utils'
 import BlogList from '@/components/post'
+import { Separator } from '@/components/ui/separator'
 
 export const metadata = {
   title: 'Welcome on my personal Blog',

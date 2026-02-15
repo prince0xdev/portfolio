@@ -1,14 +1,7 @@
 import type { Metadata } from "next";
 import { Outfit } from "next/font/google";
 import './global.css';
-import Header from "@/components/layout/Header";
-import { Particles } from "@/components/magicui/particles";
-import { ThemeProvider } from 'next-themes'
-import { TooltipProvider } from "@/components/ui/tooltip"
-import Footer from "@/components/layout/Footer";
-import { ScrollProgress } from "@/components/magicui/scroll-progress";
 import { Analytics } from '@vercel/analytics/next';
-import LayoutClientWrapper from "@/components/layout/LayoutClientWrapper";
 
 const outfit = Outfit({
   variable: "--font-outfit",

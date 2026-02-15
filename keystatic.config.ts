@@ -1,8 +1,17 @@
-import { config, fields, collection } from "@keystatic/core";
+import { config, fields, collection, singleton } from "@keystatic/core";
 
 export default config({
   storage: {
     kind: "local",
+  },
+  singletons: {
+    resume: singleton({
+      label: "Resume",
+      format: "json",
+      schema: {
+
+      }
+    })
   },
   collections: {
     posts: collection({
@@ -19,7 +28,7 @@ export default config({
           defaultValue: Date.now().toString(),
           validation: { isRequired: true },
         }),
-        summary: fields.text({ label: "Summary" }),
+        summary: fields.text({ label: "Summary", validation: {isRequired: true} }),
         coverImage: fields.image({
           label: "Cover image",
           validation: { isRequired: true },

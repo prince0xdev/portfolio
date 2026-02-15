@@ -49,7 +49,7 @@ const getMDXData = (dir: string) => {
 }
 
 export const getBlogPosts = () => {
-  return getMDXData(path.join(process.cwd(), 'app', 'blog', 'posts'))
+  return getMDXData(path.join(process.cwd(), 'app', '(main)', 'blog', 'posts'))
 }
 
 export const formatDate = (date: string, includeRelative = false) => {

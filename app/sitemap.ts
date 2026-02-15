@@ -1,6 +1,6 @@
-import { getBlogPosts } from '@/app/blog/utils'
+import { getBlogPosts } from '@/app/(main)/blog/utils'
 
-export const baseUrl = 'https://ekpinse-prince.vercel.app/'
+export const baseUrl = 'https://prince0xdev.vercel.app/'
 
 export default async function sitemap() {
   const blogs = getBlogPosts().map((post) => ({
