@@ -13,7 +13,7 @@ interface Post {
   };
 }
 
-export default function BlogList({ posts, isHome }: { posts: Post[], isHome?: boolean }) {
+export default function BlogList({ posts, isHome = false }: { posts: Post[], isHome?: boolean }) {
   const [query, setQuery] = useState("");
 
   const filtered = query.trim()
@@ -41,7 +41,7 @@ export default function BlogList({ posts, isHome }: { posts: Post[], isHome?: bo
             placeholder="Search an article by title or summary…"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            className="w-full pl-10 pr-4 py-2.5 text-sm rounded-xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900 text-neutral-900 dark:text-white placeholder:text-neutral-400 focus:outline-none focus:border-neutral-400 dark:focus:border-neutral-600 transition-colors"
+           className="w-full pl-10 pr-4 py-2.5 text-sm rounded-xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900 text-neutral-900 dark:text-white placeholder:text-neutral-400 focus:outline-none focus:border-neutral-400 dark:focus:border-neutral-600 transition-colors"
           />
         </div>
       )}
