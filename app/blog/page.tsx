@@ -18,7 +18,7 @@ export default function Page() {
         <h1 className='text-xl pb-4'>My Blog</h1>
       </BlurFade>
       <Separator className='h-2 mb-4'/>
-      <BlogList isHome={true} posts={allBlogs} />
+      <BlogList posts={allBlogs} />
     </section>
   )
 }

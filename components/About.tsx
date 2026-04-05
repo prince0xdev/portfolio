@@ -21,7 +21,7 @@ export default function AboutSection() {
         {DATA.about.map((paragraph, i) => (
           <p
             key={i}
-            className="text-sm text-muted-foreground leading-relaxed tracking-tight"
+            className="text-medium text-muted-foreground leading-relaxed tracking-tight"
           >
             {paragraph}
           </p>

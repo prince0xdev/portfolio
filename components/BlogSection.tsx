@@ -15,7 +15,7 @@ function BlogSection() {
         <Link href="/blog"><InteractiveHoverButton>Load more</InteractiveHoverButton></Link>
       </BlurFade>
       <Separator className='h-2 mb-4'/>
-      <BlogList posts={allBlogs} />
+      <BlogList isHome posts={allBlogs} />
     </section>
   )
 }
