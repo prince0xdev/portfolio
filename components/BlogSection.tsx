@@ -7,7 +7,7 @@ import { getBlogPosts } from '@/app/blog/utils'
 import BlogList from './post'
 
 function BlogSection() {
-  const allBlogs = getBlogPosts() 
+  const allBlogs = getBlogPosts().slice(0, 3)
   return (
     <section className="flex flex-col gap-2 justify-center">
       <BlurFade  delay={0.25} inView>

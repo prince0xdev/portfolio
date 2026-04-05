@@ -12,7 +12,7 @@ function ProjectsSection() {
             <h1 className='text-xl pb-4'>Projects</h1>
         </BlurFade>
         <Separator className='h-2 mb-4'/>
-        <div className='flex flex-col gap-4 justify-between items-center rounded-sm w-full text-md text-justify text-muted-foreground tracking-tight font-light'>
+        <div className='flex  flex-col gap-4 justify-between items-center rounded-sm w-full text-md text-justify text-muted-foreground tracking-tight font-light'>
             {
                 data.map((project, index)=>(
                 <ProjectCard 

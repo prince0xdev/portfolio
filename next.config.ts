@@ -36,6 +36,12 @@ const nextConfig = {
         hostname: "avatars.githubusercontent.com",
         pathname: "/**",
       },
+      
+      {
+        protocol: "https",
+        hostname: "cdn-images-1.medium.com",
+        pathname: "/**",
+      },
     ],
   },
 } satisfies NextConfig;

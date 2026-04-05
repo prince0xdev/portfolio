@@ -4,6 +4,7 @@ import { Separator } from "@/components/ui/separator";
 import { cn } from "@/lib/utils";
 import { Marquee } from "./magicui/marquee";
 import Image from "next/image";
+import { SectionLabel } from "./SectionLabel";
 
 function SkillsSection() {
   const skills = [
@@ -148,7 +149,7 @@ function SkillsSection() {
   return (
     <section className="flex flex-col gap-2 justify-center">
       <BlurFade delay={0.25} inView>
-        <h1 className="text-xl pb-4">Skills</h1>
+        <SectionLabel>Skills</SectionLabel>
       </BlurFade>
       <Separator className="h-2 mb-4" />
       <div className="relative flex w-full flex-col items-center justify-center overflow-hidden">

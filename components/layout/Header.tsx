@@ -1,39 +1,64 @@
-import Image from 'next/image'
-import React from 'react'
-import { DATA } from '@/data/resume'
+import Image from "next/image";
+import { DATA } from "@/data/resume";
 
-function Header() {
+export default function Header() {
   const education = DATA.education[0];
 
   return (
-    <header className="flex items-center justify-between mb-[50px]">
-      {/* Left section contains my profile picture and name */}
-      <div className="flex items-center gap-3 ">
-        <div className=''>
-          <Image src="/ekpinse.webp" alt="Prince Ekpinse" width={120} height={60} className='rounded-full' />
+    <header className="flex items-center justify-between mb-16">
+
+      {/* Identité */}
+      <div className="flex items-center gap-4">
+        <div className="relative flex-shrink-0">
+          <Image
+            src="/ekpinse.webp"
+            alt="Prince Ekpinse"
+            width={56}
+            height={56}
+            className="rounded-full object-cover w-14 h-14"
+          />
+          {/* Anneau amber */}
+          <span className="absolute inset-0 rounded-full ring-2 ring-amber-500/60 ring-offset-2 ring-offset-background" />
         </div>
 
         <div>
-          <h1>{DATA.name}, <span className='text-sm text-muted-foreground tracking-tight'>{DATA.age} years old</span> </h1>
-          <p className="text-sm text-muted-foreground tracking-tight gap-2">{DATA.title} </p>
-          <p className="text-sm text-muted-foreground tracking-tight gap-2">{DATA.location}</p>
+          <div className="flex items-baseline gap-2">
+            <h1 className="text-xl font-medium tracking-tight">
+              {DATA.name}
+            </h1>
+            <span className="text-xs text-muted-foreground">
+              {DATA.age} ans
+            </span>
+          </div>
+          <p className="text-sm text-amber-500 font-medium mt-0.5">
+            {DATA.title}
+          </p>
+          <p className="text-xs text-muted-foreground mt-0.5 tracking-tight">
+            {DATA.location}
+          </p>
         </div>
       </div>
-      
-      {/* Right section contains my recent university details */}
-      <div className='hidden md:block'>
-        <div className='flex items-center gap-2 '>
-          <Image src="/logo-hecm.webp" alt="HECM logo" width={60} height={60} className='rounded-full border-1 border-red(' />
-          <h3 className='text-sm'>{education.school}</h3>
-        </div>
+
+      {/* École — desktop uniquement */}
+      <div className="hidden md:flex items-start gap-4 border-l border-border pl-6">
+        <Image
+          src="/logo-hecm.webp"
+          alt="HECM"
+          width={40}
+          height={40}
+          className="rounded-lg mt-0.5 object-contain"
+        />
         <div>
-          <p className='text-muted-foreground tracking-tight text-sm'>{education.degree}</p>
-          <p className='text-muted-foreground tracking-tight text-sm'>{education.start} - {education.end}</p>
+          <p className="text-sm font-medium">{education.school}</p>
+          <p className="text-xs text-muted-foreground mt-0.5">
+            {education.degree}
+          </p>
+          <p className="text-xs text-muted-foreground">
+            {education.start} — {education.end}
+          </p>
         </div>
       </div>
 
     </header>
-  )
+  );
 }
-
-export default Header

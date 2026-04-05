@@ -1,112 +1,89 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { useEffect, useState } from "react";
-import { Particles } from "../magicui/particles";
 
 interface SplashScreenProps {
   onAnimationComplete: () => void;
 }
 
 export default function SplashScreen({ onAnimationComplete }: SplashScreenProps) {
-  const [showText, setShowText] = useState(false);
-  const [displayText, setDisplayText] = useState("");
-  const [slideDown, setSlideDown] = useState(false);
-  const fullText = "WELCOME";
+  const [phase, setPhase] = useState<"enter" | "hold" | "exit">("enter");
 
-  // Étape 1 : attendre avant d'afficher le texte
   useEffect(() => {
-    const timer1 = setTimeout(() => setShowText(true), 3000);
-    return () => clearTimeout(timer1);
+    const t1 = setTimeout(() => setPhase("hold"), 1000);
+    const t2 = setTimeout(() => setPhase("exit"), 2200);
+    return () => { clearTimeout(t1); clearTimeout(t2); };
   }, []);
 
-  // Étape 2 : effet de frappe du texte
-  useEffect(() => {
-    if (showText) {
-      let i = 0;
-      const typingInterval = setInterval(() => {
-        setDisplayText(fullText.slice(0, i + 1));
-        i++;
-        if (i === fullText.length) {
-          clearInterval(typingInterval);
-          setTimeout(() => {
-            setSlideDown(true); // Lance l’effet de descente
-          }, 1000);
-        }
-      }, 150);
-      return () => clearInterval(typingInterval);
-    }
-  }, [showText]);
-
-  // Animation des trois points initiaux
-  const dotVariants = {
-    initial: { y: "0%" },
-    animate: { y: "100%" },
-  };
-
-  const dotTransition = {
-    duration: 0.5,
-    repeat: Infinity,
-    repeatType: "reverse" as const,
-    ease: "easeInOut",
-  } as const;
+  const letters = "EKPINSE".split("");
 
   return (
-    <motion.div
-      initial={{ y: "0%" }}
-      animate={slideDown ? { y: "100%" } : { y: "0%" }}
-      transition={{ duration: 1.5, ease: [0.65, 0, 0.35, 1] }} // effet smooth et lent
-      onAnimationComplete={() => {
-        if (slideDown) onAnimationComplete();
-      }}
-      className="fixed inset-0 flex flex-col items-center justify-center bg-neutral-900 z-50 overflow-hidden"
-    >
-      {/* Particules en arrière-plan */}
-      <Particles
-        className="fixed inset-0 -z-10"
-        quantity={250}
-        color="#8b5cf6"
-        ease={20}
-        size={0.6}
-        staticity={30}
-        refresh={true}
-      />
-
-      {/* Phase 1 : points de chargement */}
-      {!showText ? (
-        <div className="flex space-x-4">
-          <motion.span
-            variants={dotVariants}
-            initial="initial"
-            animate="animate"
-            transition={{ ...dotTransition, delay: 0 }}
-            className="block w-8 h-8 rounded-full bg-yellow-500"
-          />
-          <motion.span
-            variants={dotVariants}
-            initial="initial"
-            animate="animate"
-            transition={{ ...dotTransition, delay: 0.2 }}
-            className="block w-8 h-8 rounded-full bg-yellow-500"
-          />
-          <motion.span
-            variants={dotVariants}
-            initial="initial"
-            animate="animate"
-            transition={{ ...dotTransition, delay: 0.4 }}
-            className="block w-8 h-8 rounded-full bg-yellow-500"
-          />
-        </div>
-      ) : (
-        <motion.h1
-          initial={{ scale: 0.5, opacity: 0 }}
-          animate={{ scale: 1, opacity: 1 }}
-          transition={{ duration: 0.5 }}
-          className="text-6xl sm:text-8xl font-bold text-white"
+    <AnimatePresence>
+      {phase !== "exit" && (
+        <motion.div
+          key="splash"
+          initial={{ opacity: 1 }}
+          exit={{ y: "-100%", transition: { duration: 0.9, ease: [0.76, 0, 0.24, 1] } }}
+          onAnimationComplete={(def) => {
+            if ((def as any).y !== undefined) onAnimationComplete();
+          }}
+          className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-neutral-950 overflow-hidden"
         >
-          <span className="text-yellow-500">{displayText}...</span>
-        </motion.h1>
+          <div className="absolute inset-0 pointer-events-none">
+            <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] rounded-full bg-amber-500/10 blur-[80px]" />
+          </div>
+
+          <div className="flex items-baseline gap-0 mb-3">
+            <motion.span
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2, ease: [0.33, 1, 0.68, 1] }}
+              className="text-5xl sm:text-7xl font-medium text-white tracking-tight"
+            >
+              Prince
+            </motion.span>
+            <motion.span
+              initial={{ opacity: 0, scale: 0 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.4, delay: 0.7, ease: "backOut" }}
+              className="text-5xl sm:text-7xl font-medium text-amber-500 ml-1"
+            >
+              .
+            </motion.span>
+          </div>
+
+          <div className="flex items-center gap-3">
+            <motion.span
+              initial={{ scaleX: 0 }}
+              animate={{ scaleX: 1 }}
+              transition={{ duration: 0.4, delay: 0.8 }}
+              style={{ transformOrigin: "left" }}
+              className="block w-8 h-[1px] bg-amber-500"
+            />
+            <div className="flex gap-[2px]">
+              {letters.map((l, i) => (
+                <motion.span
+                  key={i}
+                  initial={{ opacity: 0, y: 6 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.3, delay: 0.9 + i * 0.06 }}
+                  className="text-[11px] tracking-[0.2em] text-neutral-400"
+                >
+                  {l}
+                </motion.span>
+              ))}
+            </div>
+            <motion.span
+              initial={{ scaleX: 0 }}
+              animate={{ scaleX: 1 }}
+              transition={{ duration: 0.4, delay: 0.8 }}
+              style={{ transformOrigin: "right" }}
+              className="block w-8 h-[1px] bg-amber-500"
+            />
+          </div>
+        </motion.div>
       )}
-    </motion.div>
+    </AnimatePresence>
   );
 }

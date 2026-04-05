@@ -11,8 +11,10 @@ export async function generateStaticParams() {
   }))
 }
 
-export function generateMetadata({ params }) {
-  const post = getBlogPosts().find((post) => post.slug === params.slug)
+export async function generateMetadata({ params }) {
+  const { slug } = await params  // ✅ await ici
+  const post = getBlogPosts().find((post) => post.slug === slug)
+
   if (!post) {
     return
   }
@@ -37,11 +39,7 @@ export function generateMetadata({ params }) {
       type: 'article',
       publishedTime,
       url: `${baseUrl}/blog/${post.slug}`,
-      images: [
-        {
-          url: ogImage,
-        },
-      ],
+      images: [{ url: ogImage }],
     },
     twitter: {
       card: 'summary_large_image',
@@ -52,8 +50,9 @@ export function generateMetadata({ params }) {
   }
 }
 
-export default function Blog({ params }) {
-  const post = getBlogPosts().find((post) => post.slug === params.slug)
+export default async function Blog({ params }) {
+  const { slug } = await params
+  const post = getBlogPosts().find((post) => post.slug === slug)
 
   if (!post) {
     notFound()
@@ -91,7 +90,7 @@ export default function Blog({ params }) {
           {formatDate(post.metadata.publishedAt)}
         </p>
       </div>
-      <article className="prose">
+      <article className="prose text-justify dark:prose-invert">
         <CustomMDX source={post.content} />
       </article>
     </section>
